@@ -30,7 +30,7 @@ permissions:
 env:
   TF_VERSION: '1.15.6'
   AWS_REGION: us-east-1
-  TF_STATE_BUCKET: zen-pharma-terraform-state-rachan02sep
+  TF_STATE_BUCKET: zen-pharma-terraform-state-yadh042026
 
 concurrency:
   group: terraform-${{ github.ref }}
