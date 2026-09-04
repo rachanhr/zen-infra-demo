@@ -1,0 +1,6 @@
+envs\dev\.terraform.lock.hcl
+envs\dev\.terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
