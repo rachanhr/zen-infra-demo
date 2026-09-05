@@ -19,7 +19,7 @@ module "vpc" {
 }
 
 module "eks" {
-  source = "../../modules/eks"
+  source = "../../../modules/eks"
 
   project            = local.project
   env                = local.env
@@ -33,7 +33,7 @@ module "eks" {
 }
 
 module "rds" {
-  source = "../../modules/rds"
+  source = "../../../modules/rds"
 
   project                    = local.project
   env                        = local.env
@@ -45,7 +45,7 @@ module "rds" {
 }
 
 module "ecr" {
-  source = "../../modules/ecr"
+  source = "../../../modules/ecr"
 
   project = local.project
   env     = local.env
@@ -63,7 +63,7 @@ module "ecr" {
 }
 
 module "iam" {
-  source = "../../modules/iam"
+  source = "../../../modules/iam"
 
   project           = local.project
   env               = local.env
@@ -76,7 +76,7 @@ module "iam" {
 }
 
 module "secrets-manager" {
-  source = "../../modules/secrets-manager"
+  source = "../../../modules/secrets-manager"
 
   project     = local.project
   env         = local.env
