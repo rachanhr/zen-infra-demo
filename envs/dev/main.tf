@@ -19,7 +19,7 @@ module "vpc" {
 }
 
 module "eks" {
-  source = "../../modules/eks"
+  source = "../../modules/EKS"
 
   project            = local.project
   env                = local.env
@@ -45,7 +45,7 @@ module "rds" {
 }
 
 module "ecr" {
-  source = "../../modules/ecr"
+  source = "../../modules/ECR"
 
   project = local.project
   env     = local.env
