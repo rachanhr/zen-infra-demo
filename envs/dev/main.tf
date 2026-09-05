@@ -7,7 +7,7 @@ locals {
 data "aws_caller_identity" "current" {}
 
 module "vpc" {
-  source = "./....modulesvpc"
+  source = "D:\VALAXY\demo\zen-infra\modules\VPC" 
 
   project               = local.project
   env                   = local.env
